@@ -1837,3 +1837,56 @@
   }
 
 }
+
+@media (max-width: 680px) {
+
+  /* 1. APPROACH WIGGLE
+     Move it LEFT so the four dots sit centrally under the curve */
+  .approach-wiggle {
+    left: 0 !important;
+    transform: translateX(-20px) !important;
+  }
+
+
+  /* 2. ABOUT ME
+     Give the section title just a little more breathing room */
+  .about-section {
+    padding-top: 5px !important;
+  }
+
+
+  /* 3. CLOSE THE BIG GAP BETWEEN ABOUT COPY + MEGAN */
+  .about-copy {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .about-photo-wrap {
+    margin-top: -55px !important;
+    padding-top: 0 !important;
+  }
+
+
+  /* 4. FOOTER MOBILE POSITIONING */
+
+  /* Give left-side columns a tiny bit of space from screen edge */
+  .footer-section:nth-of-type(1),
+  .footer-section:nth-of-type(3) {
+    padding-left: 3px !important;
+  }
+
+  /* Location + Policies align to right */
+  .footer-section:nth-of-type(2),
+  .footer-section:nth-of-type(4) {
+    text-align: right !important;
+    align-items: flex-end !important;
+    padding-right: 3px !important;
+  }
+
+  /* Make links within right-hand columns follow that alignment too */
+  .footer-section:nth-of-type(2) a,
+  .footer-section:nth-of-type(4) a {
+    justify-content: flex-end !important;
+    text-align: right !important;
+  }
+}
