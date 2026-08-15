@@ -1251,3 +1251,22 @@
 .pt-content .pt-logo {
     transform: translateX(140px) !important;
 }
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact-icon {
+  display: block !important;
+  width: 18px !important;
+  height: 18px !important;
+  object-fit: contain;
+  flex: 0 0 18px;
+}
+
+.email-img {
+  width: 19px !important;
+  height: 19px !important;
+}
