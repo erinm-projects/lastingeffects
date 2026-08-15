@@ -1218,3 +1218,16 @@
     width: min(620px, 100%);
     margin: 28px auto 0;
 }
+
+.pt-content .pt-logo {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+
+    width: min(650px, 90%) !important;
+    height: auto !important;
+
+    margin: 18px auto 22px !important;
+    transform: none !important;
+    align-self: center !important;
+}
