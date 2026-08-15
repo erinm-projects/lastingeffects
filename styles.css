@@ -1187,3 +1187,34 @@
     display: inline-block;
     margin-bottom: 25px;
 }
+
+/* Personal Training page final alignment */
+
+.pt-content {
+    max-width: 760px;
+    margin: 15vh auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pt-logo {
+    display: block;
+    width: min(650px, 90%);
+    height: auto;
+    object-fit: contain;
+    margin: 18px auto 22px;
+}
+
+.pt-intro {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pt-interest-form {
+    width: min(620px, 100%);
+    margin: 28px auto 0;
+}
