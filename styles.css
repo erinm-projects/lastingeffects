@@ -1161,6 +1161,7 @@
 }
 
 .booking-copy {
+    transform: translateX(15px);
     width: 430px;
     padding: 0;
     margin: 0;
@@ -1180,4 +1181,9 @@
     max-height: 385px;
     margin: 0;
     transform: none;
+}
+
+.booking-question-link {
+    display: inline-block;
+    margin-bottom: 15px;
 }
