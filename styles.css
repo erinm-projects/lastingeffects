@@ -716,7 +716,7 @@
 
 /* 2. Nudge faded approach wiggle 25px right */
 .approach-wiggle{
-  left:calc(-4% + 75px);
+  left:calc(-4% + 175px);
 }
 
 /* 3–4. Treatment help now belongs to the image column */
