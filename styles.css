@@ -1890,3 +1890,23 @@
     text-align: right !important;
   }
 }
+
+@media (max-width: 680px) {
+  .approach-wiggle {
+    left: 0 !important;
+    transform: translateX(60px) !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-photo-wrap {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 0 !important;
+    margin-top: -60px !important;
+  }
+
+  .about-photo {
+    margin-top: 0 !important;
+  }
+}
