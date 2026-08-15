@@ -1090,11 +1090,11 @@
 .approach-wiggle {
     position: absolute;
     left: 0 !important;
-    transform: translateX(120px);
+    transform: translateX(110px);
 }
 
 @media (max-width: 680px) {
     .approach-wiggle {
-        transform: translateX(45px);
+        transform: translateX(40px);
     }
 }
