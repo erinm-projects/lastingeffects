@@ -1249,7 +1249,7 @@
 }
 
 .pt-content .pt-logo {
-    transform: translateX(160px) !important;
+    transform: translateX(170px) !important;
 }
 
 .icon-link {
@@ -1269,4 +1269,9 @@
 .email-img {
   width: 19px !important;
   height: 19px !important;
+}
+
+.icon-link img[src*="phoneicon"],
+.icon-link img[src*="emailicon"] {
+  filter: brightness(0) invert(1);
 }
