@@ -1085,3 +1085,16 @@
     width:100%;margin-top:8px;
   }
 }
+
+/* Wiggle final positioning */
+.approach-wiggle {
+    position: absolute;
+    left: 0 !important;
+    transform: translateX(125px);
+}
+
+@media (max-width: 680px) {
+    .approach-wiggle {
+        transform: translateX(50px);
+    }
+}
