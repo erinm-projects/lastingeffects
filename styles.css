@@ -1247,3 +1247,7 @@
     position: static !important;
     transform: none !important;
 }
+
+.pt-content .pt-logo {
+    transform: translateX(110px) !important;
+}
