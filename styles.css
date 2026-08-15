@@ -1563,3 +1563,277 @@
   }
 
 }
+
+/* =====================================================
+   MOBILE REFINEMENTS
+   ===================================================== */
+
+@media (max-width: 680px) {
+
+  /* ---------------------------------
+     STOP HORIZONTAL PAGE OVERFLOW
+     --------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+
+  /* ---------------------------------
+     APPROACH
+     --------------------------------- */
+
+  /* Move faded black wiggle another 15px right */
+  .approach-wiggle {
+    transform: translateX(15px) !important;
+  }
+
+  /* Keep original bullet style, vertically stacked */
+  .approach-points {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .approach-points span {
+    display: block !important;
+  }
+
+  .approach-points span::before {
+    content: "•" !important;
+    counter-increment: none !important;
+    margin-right: 8px !important;
+    color: var(--sage-deep) !important;
+  }
+
+
+  /* ---------------------------------
+     TREATMENTS
+     --------------------------------- */
+
+  /* Let treatment content use more phone width */
+  .treatments-section .section-shell {
+    width: calc(100% - 16px) !important;
+    max-width: none !important;
+  }
+
+  .offer-list,
+  .accordion {
+    width: 100% !important;
+  }
+
+  /* Keep Not Sure after the treatment table */
+  .treatment-help {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 14px 0 24px !important;
+  }
+
+
+  /* ---------------------------------
+     ABOUT ME
+     --------------------------------- */
+
+  /* Remove gap between body copy and Megan */
+  .about-copy {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .about-photo-wrap {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Smaller handwritten labels */
+  .script-note {
+    font-size: 16px !important;
+    line-height: 1.05 !important;
+  }
+
+  .note-arrow {
+    font-size: 13px !important;
+  }
+
+  /* Rehab annotation */
+  .note-d {
+    right: 2% !important;
+    bottom: 8% !important;
+    width: 120px !important;
+    min-width: 0 !important;
+
+    text-align: right !important;
+    line-height: 1.15 !important;
+  }
+
+
+  /* ---------------------------------
+     LET'S FIGURE IT OUT
+     --------------------------------- */
+
+  .booking-section {
+    overflow: hidden;
+  }
+
+  .booking-layout {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(115px, 34%) !important;
+
+    column-gap: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 20px !important;
+
+    align-items: stretch !important;
+  }
+
+  /* Make the text column run the full height,
+     allowing the last contact line to sit lower */
+  .booking-copy {
+    min-width: 0 !important;
+    min-height: 500px;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    padding: 18px 0 22px !important;
+    margin: 0 !important;
+
+    transform: none !important;
+  }
+
+  /* Pull opening copy towards top of sage section */
+  .booking-copy > .kicker {
+    margin-top: 0 !important;
+  }
+
+  .booking-copy h2 {
+    margin-top: 8px !important;
+  }
+
+  /* Keep buttons where they naturally sit */
+  .booking-buttons {
+    margin-top: 22px !important;
+  }
+
+  /* Push ONLY final question towards bottom */
+  .booking-question-link {
+    display: inline-block !important;
+
+    margin-top: auto !important;
+    margin-bottom: 8px !important;
+
+    width: max-content;
+    max-width: 100%;
+
+    font-size: 10px !important;
+  }
+
+  /* Megan stays next to copy but scales to phone */
+  .booking-image {
+    width: 100% !important;
+    height: 100% !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+  }
+
+  .booking-image img {
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 165px !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+
+  /* ---------------------------------
+     FOOTER
+     --------------------------------- */
+
+  .footer-grid {
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr) !important;
+
+    gap: 28px 24px !important;
+
+    width: 100% !important;
+  }
+
+  /* Logo gets its own centred row */
+  .footer-logo {
+    grid-column: 1 / -1 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+  }
+
+  .footer-logo img {
+    width: 80px !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+  }
+
+  /* Get in touch | Location
+     Follow       | Policies */
+  .footer-section {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+  }
+
+  .footer-section a,
+  .footer-section span {
+    font-size: 9px !important;
+  }
+
+
+  /* ---------------------------------
+     PERSONAL TRAINING
+     Undo desktop manual positioning
+     --------------------------------- */
+
+  .pt-content .pt-logo,
+  .pt-logo-wrap .pt-logo {
+    transform: none !important;
+
+    width: min(88vw, 520px) !important;
+    max-width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    align-self: center !important;
+  }
+
+}
