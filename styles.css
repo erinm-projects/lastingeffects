@@ -1161,7 +1161,7 @@
 }
 
 .booking-copy {
-    transform: translateX(15px);
+    transform: translateX(35px);
     width: 430px;
     padding: 0;
     margin: 0;
@@ -1185,5 +1185,5 @@
 
 .booking-question-link {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
