@@ -1275,3 +1275,291 @@
 .icon-link img[src*="emailicon"] {
   filter: brightness(0) invert(1);
 }
+
+/* =====================================================
+   FINAL MOBILE FIXES — TEMPORARY UNTIL CODE CLEAN-UP
+   ===================================================== */
+
+@media (max-width: 680px) {
+
+  /* -----------------------------
+     APPROACH
+     ----------------------------- */
+
+  /* Close space between the circle/wiggle and "We look..." */
+  .approach-mark {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .approach-copy {
+    padding-top: 0 !important;
+    margin-top: -10px !important;
+  }
+
+  /* 3 points vertically: 1. 2. 3. */
+  .approach-points {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin-top: 28px !important;
+
+    counter-reset: approach-point;
+  }
+
+  .approach-points span {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .approach-points span::before {
+    counter-increment: approach-point;
+    content: counter(approach-point) "." !important;
+    margin: 0 !important;
+    color: var(--ink) !important;
+    font-weight: 700;
+  }
+
+
+  /* -----------------------------
+     TREATMENTS
+     ----------------------------- */
+
+  /*
+     Allows the image + help content to participate separately
+     in the mobile layout.
+  */
+  .treatments-main {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .offer-photo-column {
+    display: contents !important;
+  }
+
+  .offer-photo {
+    order: 1;
+  }
+
+  .offer-list {
+    order: 2;
+  }
+
+  .treatment-help {
+    order: 3;
+    margin: 0 !important;
+    padding: 12px 0 28px !important;
+  }
+
+  /* Green wiggle comes afterwards */
+  .signature-separator {
+    margin-top: 0 !important;
+  }
+
+
+  /* -----------------------------
+     ABOUT ME
+     ----------------------------- */
+
+  /* Close gap after "things that matter to you" */
+  .about-copy {
+    margin-bottom: 0 !important;
+  }
+
+  .about-photo-wrap {
+    padding-top: 25px !important;
+    margin-top: 0 !important;
+  }
+
+  /* Smaller annotations so they sit around Megan */
+  .script-note {
+    font-size: 17px !important;
+    line-height: 1 !important;
+  }
+
+  .note-arrow {
+    font-size: 14px !important;
+  }
+
+  .note-a {
+    left: 1% !important;
+    top: 24% !important;
+  }
+
+  .note-b {
+    left: 0 !important;
+    top: 55% !important;
+  }
+
+  .note-c {
+    right: 1% !important;
+    top: 28% !important;
+  }
+
+  .note-d {
+    right: 0 !important;
+    bottom: 8% !important;
+    min-width: 125px !important;
+    max-width: 125px !important;
+  }
+
+
+  /* -----------------------------
+     LET'S FIGURE IT OUT
+     Keep Megan NEXT TO the copy
+     ----------------------------- */
+
+  .booking-section {
+    overflow: hidden;
+  }
+
+  .booking-layout {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+
+    display: grid !important;
+
+    /* text | Megan */
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(105px, 36vw) !important;
+
+    column-gap: 0 !important;
+    align-items: end !important;
+  }
+
+  .booking-copy {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .booking-copy h2 {
+    font-size: 37px !important;
+    line-height: .94 !important;
+  }
+
+  .booking-copy p {
+    font-size: 12px !important;
+  }
+
+  .booking-image {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-end !important;
+  }
+
+  .booking-image img {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 150px !important;
+    height: auto !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  /* Buttons need to fit inside the narrower text column */
+  .booking-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 7px !important;
+    width: 100%;
+  }
+
+  .booking-btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    font-size: 8px !important;
+  }
+
+  .booking-question-link {
+    font-size: 10px !important;
+  }
+
+
+  /* -----------------------------
+     FOOTER
+     ----------------------------- */
+
+  .footer-grid {
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .footer-logo {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+  }
+
+
+  /* -----------------------------
+     PERSONAL TRAINING
+     Undo desktop/manual logo fixes
+     ----------------------------- */
+
+  .pt-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .pt-logo-wrap {
+    width: 100% !important;
+
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .pt-content .pt-logo,
+  .pt-logo-wrap .pt-logo {
+    position: static !important;
+
+    display: block !important;
+
+    width: min(88vw, 520px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 18px auto 22px !important;
+
+    /* Important: kills the +110px manual desktop fix */
+    transform: none !important;
+
+    left: auto !important;
+    right: auto !important;
+
+    align-self: center !important;
+  }
+
+}
