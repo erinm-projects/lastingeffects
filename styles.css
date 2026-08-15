@@ -1144,3 +1144,40 @@
         transform: none;
     }
 }
+
+/* Booking section final positioning */
+
+.booking-layout {
+    width: fit-content;
+    max-width: calc(100% - 120px);
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: 430px 360px;
+    column-gap: 0;
+
+    align-items: end;
+    justify-content: center;
+}
+
+.booking-copy {
+    width: 430px;
+    padding: 0;
+    margin: 0;
+}
+
+.booking-image {
+    width: 360px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.booking-image img {
+    max-height: 385px;
+    margin: 0;
+    transform: none;
+}
