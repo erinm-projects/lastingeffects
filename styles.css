@@ -1910,3 +1910,9 @@
     margin-top: 0 !important;
   }
 }
+
+@media (max-width: 680px) {
+  .about-section {
+    padding-top: 35px !important;
+  }
+}
