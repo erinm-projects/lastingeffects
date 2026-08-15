@@ -798,22 +798,21 @@ h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;letter-spacing:
   .about-photo{margin-top:0!important;}
 }
 @media (max-width: 680px){
-  .about-section{padding-top:35px!important;}
+  .about-section{padding-top:55px!important;}
 }
 
 @media (max-width: 680px) {
-  .booking-copy h2,
-  .about-copy h2,
-  .reviews-head h2,
-  .useful-sub,
+
   .sorting-intro h2,
-  .offer-list h2 {
-    font-weight: 800;
+  .approach-mark h2,
+  .offer-list h2,
+  .treatment-help h3,
+  .reviews-head h2,
+  .booking-copy h2,
+  .useful-sub {
+    font-family: "Bodoni Moda", Georgia, serif !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.045em !important;
   }
-}
 
-@media (max-width: 680px) {
-  .about-copy h2 {
-    -webkit-text-stroke: 0.35px currentColor;
-  }
 }
